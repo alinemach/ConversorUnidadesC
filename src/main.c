@@ -17,7 +17,6 @@ int main() {
         //printf("8. Unidades de area\n");
         //printf("9. Unidades de tempo\n");
         //printf("10. Tamanho de dados digitais\n");
-        
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -60,6 +59,5 @@ int main() {
                 printf("Opcao invalida. Tente novamente.\n");
         }
     } while (opcao != 0);
-
     return 0;
 }
