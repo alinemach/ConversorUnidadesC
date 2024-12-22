@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "conversorEnergia.h"
+#include "conversorPotencia.h"
 
 int main() {
     int opcao;
@@ -13,7 +14,7 @@ int main() {
         //printf("4. Unidades de volume\n");
         //printf("5. Unidades de temperatura\n");
         //printf("6. Unidades de velocidade\n");
-        //printf("7. Unidades de potencia\n");
+        printf("7. Unidades de potencia\n");
         //printf("8. Unidades de area\n");
         //printf("9. Unidades de tempo\n");
         //printf("10. Tamanho de dados digitais\n");
@@ -24,6 +25,9 @@ int main() {
         switch (opcao) {
             case 1:
                 menuConversorEnergia();
+                break;
+            case 7:
+                menuConversorPotencia();
                 break;
          /*  case 2:
                 menuConversorComprimento();
