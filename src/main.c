@@ -12,7 +12,7 @@ int main() {
         //printf("2. Unidades de comprimento\n");
         //printf("3. Unidades de massa\n");
         //printf("4. Unidades de volume\n");
-        //printf("5. Unidades de temperatura\n");
+        printf("5. Unidades de temperatura\n");
         //printf("6. Unidades de velocidade\n");
         printf("7. Unidades de potencia\n");
         //printf("8. Unidades de area\n");
@@ -26,6 +26,9 @@ int main() {
             case 1:
                 menuConversorEnergia();
                 break;
+            case 5:
+                menuConversorTemperatura();
+                break;
             case 7:
                 menuConversorPotencia();
                 break;
@@ -38,9 +41,7 @@ int main() {
             case 4:
                 menuConversorVolume();
                 break;
-            case 5:
-                menuConversorTemperatura();
-                break;
+            
             case 6:
                 menuConversorVelocidade();
                 break; 
