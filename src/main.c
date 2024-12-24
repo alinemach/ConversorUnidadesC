@@ -35,10 +35,11 @@ int main() {
             case 3:
                 menuConversorMassa();
                 break; 
-            case 4:
+            */
+           case 4:
                 menuConversorVolume();
                 break;
-            case 5:
+            /*case 5:
                 menuConversorTemperatura();
                 break;
             case 6:
