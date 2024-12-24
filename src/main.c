@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "conversorEnergia.h"
 #include "conversorPotencia.h"
+#include "conversorVolume.h"
 
 int main() {
     int opcao;
