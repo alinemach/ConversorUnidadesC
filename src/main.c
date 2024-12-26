@@ -62,6 +62,7 @@ int main()
             case 10:
                 menuConversorTamanhoDadosDigitais();
                 break;
+
         case 0:
             printf("Encerrando o programa.\n");
             break;
