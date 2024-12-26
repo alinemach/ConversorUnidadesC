@@ -9,3 +9,4 @@ float milhasporhoraParakmporhora(float milhasporhora);
 float mporsegParamilhasporhora(float mporseg);
 float milhasporhoraParamporseg(float milhasporhora);
 
+#endif
