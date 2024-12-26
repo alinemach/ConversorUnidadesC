@@ -1,55 +1,78 @@
-#include <stdio.h> 
+#include <stdio.h>
 #include "conversorMassa.h"
 
-void menuConversorMassa() { 
-    int opcao; 
-    double valor; 
-    
-    do { 
-        printf("\n=== Conversor de Unidades de Massa ===\n"); 
-        printf("1. Converter de Quilograma\n"); 
-        printf("2. Converter de Grama\n"); 
-        printf("3. Converter de Tonelada\n"); 
-        printf("4. Sair\n"); 
-        printf("Escolha uma opcao: "); 
-        scanf("%d", &opcao); 
+void menuConversorMassa() {
+    int opcao;
+    float valor, resultado;
 
-        if (opcao == 4) { 
-            printf("Saindo...\n"); 
-            break; 
-        } 
-        
-        printf("Digite o valor a ser convertido: "); 
-        scanf("%lf", &valor); 
-        
-        switch (opcao) { 
-            case 1: converterParaQuilogramas(valor); 
-                break; 
-            case 2: converterParaGramas(valor); 
-                break; 
-            case 3: converterParaToneladas(valor); 
-                break; 
-            default: printf("Opcao invalida! Tente novamente.\n"); 
-        } 
-    } while (opcao != 4); 
-    
-    return 0;
+    do {
+        printf("\nConversor de Massa\n");
+        printf("1. Quilograma para Grama\n");
+        printf("2. Quilograma para Tonelada\n");
+        printf("3. Grama para Quilograma\n");
+        printf("4. Grama para Tonelada\n");
+        printf("5. Tonelada para Quilograma\n");
+        printf("6. Tonelada para Grama\n");
+        printf("0. Voltar ao menu principal\n");
+        printf("Escolha uma opcao: ");
+        scanf("%d", &opcao);
+
+        if (opcao >= 1 && opcao <= 6) {
+            printf("Digite o valor a ser convertido: ");
+            scanf("%f", &valor);
+        }
+        switch (opcao) {
+            case 1:
+                resultado = quilogramaParaGrama(valor);
+                break;
+            case 2:
+                resultado = quilogramaParaTonelada(valor);
+                break;
+            case 3:
+                resultado = gramaParaQuilograma(valor);
+                break;
+            case 4:
+                resultado = gramaParaTonelada(valor);
+                break;
+            case 5:
+                resultado = toneladaParaQuilograma(valor);
+                break;
+            case 6:
+                resultado = toneladaParaGrama(valor);
+                break;
+            case 0:
+                printf("Voltar ao menu principal...\n");
+                continue;
+            default:
+                printf("Opcao invalida. Tente novamente.\n");
+                continue;
+        }
+        if (opcao >= 1 && opcao <= 6) {
+            printf("Resultado: %.2f\n", resultado);
+        }
+    } while (opcao != 0);
 }
 
-void converterParaQuilogramas(double valor) { 
-    printf("Valor em quilogramas: %.2f kg\n", valor); 
-    printf("Valor em gramas: %.2f g\n", valor * 1000); 
-    printf("Valor em toneladas: %.2f t\n", valor / 1000); 
-} 
-    
-void converterParaGramas(double valor) { 
-    printf("Valor em quilogramas: %.2f kg\n", valor / 1000); 
-    printf("Valor em gramas: %.2f g\n", valor); 
-    printf("Valor em toneladas: %.2f t\n", valor / 1000000); 
-} 
+float quilogramaParaGrama(float quilogramas) {
+    return quilogramas * 1000.0;
+}
 
-void converterParaToneladas(double valor) { 
-    printf("Valor em quilogramas: %.2f kg\n", valor * 1000); 
-    printf("Valor em gramas: %.2f g\n", valor * 1000000); 
-    printf("Valor em toneladas: %.2f t\n", valor); 
-} 
+float quilogramaParaTonelada(float quilogramas) {
+    return quilogramas / 1000.0;
+}
+
+float gramaParaQuilograma(float gramas) {
+    return gramas / 1000.0;
+}
+
+float gramaParaTonelada(float gramas) {
+    return gramas / 1000000.0;
+}
+
+float toneladaParaQuilograma(float toneladas) {
+    return toneladas * 1000.0;
+}
+
+float toneladaParaGrama(float toneladas) {
+    return toneladas * 1000000.0;
+}
