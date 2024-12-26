@@ -1,9 +1,14 @@
 .DS_Store
 Thumbs.db
 
+
+
+
 bin/
 obj/
+
 
 .vscode/
 *.swp
 *.swo
+
