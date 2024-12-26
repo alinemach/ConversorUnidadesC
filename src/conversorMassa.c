@@ -31,9 +31,8 @@ void menuConversorMassa() {
                 break; 
             default: printf("Opcao invalida! Tente novamente.\n"); 
         } 
-    } while (opcao != 4); 
+    } while (opcao != 4);  
     
-    return 0;
 }
 
 void converterParaQuilogramas(double valor) { 
