@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "conversorEnergia.h"
 #include "conversorPotencia.h"
-#include "conversorVolume.h"
+
 
 int main() {
     int opcao;
@@ -10,7 +10,7 @@ int main() {
     do {
         printf("Menu Principal\n");
         printf("1. Unidades de energia\n");
-        //printf("2. Unidades de comprimento\n");
+        printf("2. Unidades de comprimento\n"); // Atualizando para ativar o menu de comprimento
         //printf("3. Unidades de massa\n");
         printf("4. Unidades de volume\n");
         //printf("5. Unidades de temperatura\n");
@@ -27,13 +27,13 @@ int main() {
             case 1:
                 menuConversorEnergia();
                 break;
+            case 2:
+                menuConversorComprimento(); // Chamando o menu do conversor de comprimento
+                break;
             case 7:
                 menuConversorPotencia();
                 break;
-         /*  case 2:
-                menuConversorComprimento();
-                break;
-            case 3:
+         /*  case 3:
                 menuConversorMassa();
                 break; 
             */case 4:
@@ -45,9 +45,6 @@ int main() {
             case 6:
                 menuConversorVelocidade();
                 break; 
-            case 7:
-                menuConversorPotencia();
-                break;
             case 8:
                 menuConversorArea();
                 break;

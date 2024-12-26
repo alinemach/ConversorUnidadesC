@@ -1,5 +1,3 @@
-src/output/conversorVelocidade.exe
-src/output/null
 .DS_Store
 Thumbs.db
 
@@ -13,3 +11,4 @@ obj/
 .vscode/
 *.swp
 *.swo
+
