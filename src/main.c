@@ -13,7 +13,7 @@ int main() {
         printf("1. Unidades de energia\n");
         printf("2. Unidades de comprimento\n"); // Atualizando para ativar o menu de comprimento
         printf("3. Unidades de massa\n");
-        //printf("4. Unidades de volume\n");
+        printf("4. Unidades de volume\n");
         //printf("5. Unidades de temperatura\n");
         //printf("6. Unidades de velocidade\n");
         printf("7. Unidades de potencia\n");
@@ -37,10 +37,10 @@ int main() {
             case 3:
                 menuConversorMassa();
                 break; 
-            /* case 4:
+            case 4:
                 menuConversorVolume();
                 break;
-            case 5:
+            /*case 5:
                 menuConversorTemperatura();
                 break;
             case 6:
