@@ -1,25 +1,9 @@
 #include <stdio.h> 
+#include "conversorMassa.h"
 
-void converterParaQuilogramas(double valor) { 
-    printf("Valor em quilogramas: %.2f kg\n", valor); 
-    printf("Valor em gramas: %.2f g\n", valor * 1000); 
-    printf("Valor em toneladas: %.2f t\n", valor / 1000); 
-} 
-    
-void converterParaGramas(double valor) { 
-    printf("Valor em quilogramas: %.2f kg\n", valor / 1000); 
-    printf("Valor em gramas: %.2f g\n", valor); 
-    printf("Valor em toneladas: %.2f t\n", valor / 1000000); 
-} 
-
-void converterParaToneladas(double valor) { 
-    printf("Valor em quilogramas: %.2f kg\n", valor * 1000); 
-    printf("Valor em gramas: %.2f g\n", valor * 1000000); 
-    printf("Valor em toneladas: %.2f t\n", valor); 
-} 
-
-int main() { 
-    int opcao; double valor; 
+void menuConversorMassa() { 
+    int opcao; 
+    double valor; 
     
     do { 
         printf("\n=== Conversor de Unidades de Massa ===\n"); 
@@ -51,3 +35,21 @@ int main() {
     
     return 0;
 }
+
+void converterParaQuilogramas(double valor) { 
+    printf("Valor em quilogramas: %.2f kg\n", valor); 
+    printf("Valor em gramas: %.2f g\n", valor * 1000); 
+    printf("Valor em toneladas: %.2f t\n", valor / 1000); 
+} 
+    
+void converterParaGramas(double valor) { 
+    printf("Valor em quilogramas: %.2f kg\n", valor / 1000); 
+    printf("Valor em gramas: %.2f g\n", valor); 
+    printf("Valor em toneladas: %.2f t\n", valor / 1000000); 
+} 
+
+void converterParaToneladas(double valor) { 
+    printf("Valor em quilogramas: %.2f kg\n", valor * 1000); 
+    printf("Valor em gramas: %.2f g\n", valor * 1000000); 
+    printf("Valor em toneladas: %.2f t\n", valor); 
+} 
