@@ -7,6 +7,7 @@
 #include "conversorComprimento.h"
 #include "conversorArea.h"
 #include "conversorMassa.h"
+#include "conversorDados.h"
 
 int main()
 {
@@ -24,7 +25,7 @@ int main()
         printf("7. Unidades de potencia\n");
         printf("8. Unidades de area\n");
         // printf("9. Unidades de tempo\n");
-        // printf("10. Tamanho de dados digitais\n");
+        printf("10. Tamanho de dados digitais\n");
         printf("0. Sair\n");
         printf("Escolha uma opcao: ");
         scanf("%d", &opcao);
@@ -57,10 +58,11 @@ int main()
             break;
             /*case 9:
                 menuConversorTempo();
-                break;
+                break;*/
             case 10:
                 menuConversorTamanhoDadosDigitais();
-                break;*/
+                break;
+
         case 0:
             printf("Encerrando o programa.\n");
             break;
